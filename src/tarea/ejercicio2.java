@@ -1,3 +1,5 @@
+package tarea;
+
 import java.util.Scanner;
 
 public class ejercicio2 {
