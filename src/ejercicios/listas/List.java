@@ -44,25 +44,25 @@ public class List<T> {
             }
             return true;
         }
-        Node<T> prev = head;
-        Node<T> curr = head.getNext();
-        while (curr != null && !Objects.equals(curr.getData(), value)) {
-            prev = curr;
-            curr = curr.getNext();
+        Node<T> anterior = head;
+        Node<T> actual = head.getNext();
+        while (actual != null && !Objects.equals(actual.getData(), value)) {
+            anterior = actual;
+            actual = actual.getNext();
         }
-        if (curr == null) return false;
-        prev.setNext(curr.getNext());
-        if (curr == tail) {
-            tail = prev;
+        if (actual == null) return false;
+        anterior.setNext(actual.getNext());
+        if (actual == tail) {
+            tail = anterior;
         }
         return true;
     }
 
     public boolean search(T value) {
-        Node<T> current = head;
-        while (current != null) {
-            if (Objects.equals(current.getData(), value)) return true;
-            current = current.getNext();
+        Node<T> actual = head;
+        while (actual != null) {
+            if (Objects.equals(actual.getData(), value)) return true;
+            actual = actual.getNext();
         }
         return false;
     }
