@@ -35,7 +35,7 @@ public class List<T> {
         tail = nodo;
     }
 
-    public boolean deleteNode(T value) {
+    public boolean remove(T value) {
         if (head == null) return false;
         if (Objects.equals(head.getData(), value)) {
             head = head.getNext();
@@ -58,7 +58,7 @@ public class List<T> {
         return true;
     }
 
-    public boolean search(T value) {
+    public boolean contains(T value) {
         Node<T> actual = head;
         while (actual != null) {
             if (Objects.equals(actual.getData(), value)) return true;

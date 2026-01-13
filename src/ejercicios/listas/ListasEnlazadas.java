@@ -16,13 +16,13 @@ public class ListasEnlazadas {
 
         System.out.println("La lista esta vacia? " + lista.isEmpty());
 
-        System.out.println("Se encontro el numero? " + lista.search(30));
-        System.out.println("Se encontro el numero? " + lista.search(100));
+        System.out.println("Se encontro el numero? " + lista.contains(30));
+        System.out.println("Se encontro el numero? " + lista.contains(100));
 
         lista.printList();
 
-        System.out.println("Se elimino el numero? " + lista.deleteNode(20));
-        System.out.println("Se elimino el numero? " + lista.deleteNode(100));
+        System.out.println("Se elimino el numero? " + lista.remove(20));
+        System.out.println("Se elimino el numero? " + lista.remove(100));
 
         lista.printList();
     }
