@@ -3,14 +3,14 @@ package ejercicios.listas;
 public class ListasEnlazadas {
     
     static void main() {
-        List<Integer> lista = new List<>();
+        List<Object> lista = new List<>();
 
         System.out.println("La lista esta vacia? " + lista.isEmpty());
 
         lista.addFirst(40);
-        lista.addFirst(30);
-        lista.addFirst(20);
-        lista.addFirst(10);
+        lista.addFirst("Hola mundo");
+        lista.addFirst(true);
+        lista.addFirst(10.4);
 
         lista.addLast(50);
 
